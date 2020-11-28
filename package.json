@@ -2,7 +2,7 @@
   "name": "shelter",
   "version": "1.0.0",
   "author": "Lifeni",
-  "description": "展示一些自己的项目。",
+  "description": "展示一些自己的项目",
   "private": "true",
   "scripts": {
     "build": "rollup -c",

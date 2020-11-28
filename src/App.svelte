@@ -1,11 +1,11 @@
 <script lang="ts">
-  import Card from './components/Card.svelte';
+  import Footer from './components/Footer.svelte';
+  import Header from './components/Header.svelte';
+  import Main from './components/Main.svelte';
 </script>
 
-<style>
-</style>
+<Header />
 
-<main>
-  <h1>Shelter</h1>
-  <Card />
-</main>
+<Main />
+
+<Footer />
