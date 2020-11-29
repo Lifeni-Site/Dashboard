@@ -24,9 +24,8 @@
   onMount(async () => {
     const resres = await fetch(`/assets/colors.json`)
     colors = await resres.json()
-
-    const res = await fetch(`/mock/repos.json`)
-    // const res = await fetch(`https://api.github.com/users/Lifeni/repos`)
+    
+    const res = await fetch(`https://api.github.com/users/Lifeni/repos`)
     repos = await res.json()
     final = repos
       .filter(repo => whitelist.includes(repo.name))
