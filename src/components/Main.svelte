@@ -30,7 +30,7 @@
     repos = await res.json()
     final = repos
       .filter(repo => whitelist.includes(repo.name))
-      .sort((a, b) => dayjs(b.updated_at).unix() - dayjs(a.updated_at).unix())
+      .sort((a, b) => dayjs(b.pushed_at).unix() - dayjs(a.pushed_at).unix())
   })
 </script>
 

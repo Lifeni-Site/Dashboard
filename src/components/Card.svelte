@@ -23,7 +23,7 @@
     language: string
     archived: boolean
     license: ILicense
-    updated_at: string
+    pushed_at: string
     [propName: string]: any
   }
 
@@ -127,7 +127,7 @@
         class="language-point"
         style="background-color: {color}" />
       {repo.language}</span>
-    <span class="last-update">{dayjs(repo.updated_at).fromNow()}</span>
+    <span class="last-update">{dayjs(repo.pushed_at).fromNow()}</span>
   </div>
   <div class="card-content">
     <div class="card-status-bar">
