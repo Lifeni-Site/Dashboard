@@ -1,5 +1,4 @@
 <script type="ts">
-  import { onMount } from 'svelte'
   import dayjs from 'dayjs'
   import relativeTime from 'dayjs/plugin/relativeTime'
   import 'dayjs/locale/zh-cn'
@@ -39,7 +38,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: var(--background-0);
     overflow: hidden;
   }
 
@@ -49,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #616161;
+    color: var(--font-secondary);
     font-size: 0.875rem;
     line-height: 1.25rem;
     box-sizing: border-box;
@@ -86,7 +85,7 @@
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: #616161;
+    color: var(--font-secondary);
   }
 
   .license svg,
@@ -94,19 +93,21 @@
   .fork-count svg,
   .issues-count svg {
     margin: 0 0.5rem 0 0;
-    fill: #616161;
+    fill: var(--font-secondary);
   }
 
   .card-title {
     margin: 0;
     font-size: 1.25rem;
     line-height: 2.5rem;
+    color: var(--font-primary);
   }
   .card-description {
     margin: 0;
     padding: 0;
     font-size: 1rem;
     line-height: 1.75rem;
+    color: var(--font-primary);
   }
 
   .card-action-bar {
@@ -128,10 +129,9 @@
       {repo.language}</span>
     <span class="last-update">{dayjs(repo.updated_at).fromNow()}</span>
   </div>
-  <!-- <img src="" alt="Placeholder" class="card-image" /> -->
   <div class="card-content">
     <div class="card-status-bar">
-      {#if repo.license.spdx_id !== ''}
+      {#if repo.license.spdx_id}
         <span class="license">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +191,7 @@
       class="github-link">
       GitHub
     </a>
-    {#if repo.homepage !== ''}
+    {#if !!repo.homepage}
       <a
         href={repo.homepage}
         target="_blank"

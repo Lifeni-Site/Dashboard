@@ -1,5 +1,5 @@
 <script lang="ts">
-  let update = 'Time';
+  let update = 'Time'
 </script>
 
 <style>
@@ -10,7 +10,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    color: var(--font-primary);
+    background-color: var(--background-0);
     box-sizing: border-box;
   }
 
@@ -32,6 +33,10 @@
 
   header a {
     margin: 24px 0 0 0;
+  }
+
+  header svg {
+    fill: var(--font-primary);
   }
 </style>
 

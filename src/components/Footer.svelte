@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #616161;
+    color: var(--font-secondary);
+    background-color: transparent;
     box-sizing: border-box;
   }
 </style>
