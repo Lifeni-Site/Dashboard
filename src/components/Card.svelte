@@ -29,14 +29,7 @@
   }
 
   export let repo: IRepo
-
-  let colors = []
-  let color = ''
-  onMount(async () => {
-    const res = await fetch(`/assets/colors.json`)
-    colors = await res.json()
-    color = colors[repo.language].color
-  })
+  export let color: string
 </script>
 
 <style>

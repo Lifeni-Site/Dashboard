@@ -19,9 +19,13 @@
   ]
 
   let final = []
+  let colors = []
 
   onMount(async () => {
-    // const res = await fetch(`/mock/repos.json`);
+    const resres = await fetch(`/assets/colors.json`)
+    colors = await resres.json()
+
+    // const res = await fetch(`/mock/repos.json`)
     const res = await fetch(`https://api.github.com/users/Lifeni/repos`)
     repos = await res.json()
     final = repos
@@ -44,7 +48,7 @@
 
 <main>
   {#each final as repo (dayjs(repo.id).unix())}
-    <Card {repo} />
+    <Card {repo} color={colors[repo.language].color} />
   {:else}
     <Loading />
   {/each}
