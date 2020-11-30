@@ -24,7 +24,7 @@
   onMount(async () => {
     const resres = await fetch(`/assets/colors.json`)
     colors = await resres.json()
-    
+
     const res = await fetch(`https://api.github.com/users/Lifeni/repos`)
     repos = await res.json()
     final = repos
@@ -42,6 +42,20 @@
     gap: 24px;
     place-content: start center;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 1024px) {
+    main {
+      grid-template-columns: repeat(auto-fit, 348px);
+    }
+  }
+
+  @media (max-width: 426px) {
+    main {
+      padding: 16px;
+      grid-template-columns: repeat(auto-fit, calc(100vw - 32px));
+      gap: 16px;
+    }
   }
 </style>
 

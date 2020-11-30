@@ -7,8 +7,17 @@
     justify-content: center;
     color: var(--font-secondary);
     background-color: transparent;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 426px) {
+    footer {
+      padding: 0 16px 16px 16px;
+    }
   }
 </style>
 
-<footer>Made with ❤ by Lifeni</footer>
+<footer>Made with ❤ by Lifeni | 鲁ICP备19006085号</footer>

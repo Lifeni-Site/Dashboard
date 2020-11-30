@@ -42,6 +42,18 @@
     overflow: hidden;
   }
 
+  @media (max-width: 1024px) {
+    .card {
+      width: 348px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    .card {
+      width: 100%;
+    }
+  }
+
   .card-meta {
     width: 100%;
     padding: 24px 24px 0 24px;
