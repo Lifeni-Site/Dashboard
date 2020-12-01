@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     color: var(--font-primary);
-    background-color: var(--background-0);
+    background-color: transparent;
     box-sizing: border-box;
   }
 
