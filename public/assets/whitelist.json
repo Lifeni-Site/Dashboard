@@ -1,10 +1,12 @@
 [
   "connection",
-  "shelter",
   "crawler-dashboard",
   "crawler-test",
   "here-just-record",
+  "i-seek-you",
+  "i-show-you",
   "see-you-next-id",
+  "shelter",
   "sudoku-generator",
   "sudoku-solver",
   "where-are-we-from"
