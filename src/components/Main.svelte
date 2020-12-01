@@ -6,27 +6,19 @@
   import Loading from './Loading.svelte'
 
   let repos = []
-  const whitelist = [
-    'connection',
-    'shelter',
-    'crawler-dashboard',
-    'crawler-test',
-    'here-just-record',
-    'see-you-next-id',
-    'sudoku-generator',
-    'sudoku-solver',
-    'where-are-we-from',
-  ]
-
   let final = []
+  let whitelist = []
   let colors = []
 
   onMount(async () => {
-    const resres = await fetch(`/assets/colors.json`)
-    colors = await resres.json()
+    const fetchWhitelist = await fetch(`/assets/whitelist.json`)
+    whitelist = await fetchWhitelist.json()
 
-    const res = await fetch(`https://api.github.com/users/Lifeni/repos`)
-    repos = await res.json()
+    const fetchColors = await fetch(`/assets/colors.json`)
+    colors = await fetchColors.json()
+
+    const fetchRepos = await fetch(`https://api.github.com/users/Lifeni/repos`)
+    repos = await fetchRepos.json()
     final = repos
       .filter(repo => whitelist.includes(repo.name))
       .sort((a, b) => dayjs(b.pushed_at).unix() - dayjs(a.pushed_at).unix())
