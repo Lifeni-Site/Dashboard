@@ -8,7 +8,7 @@
     color: var(--font-secondary);
     background-color: transparent;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.75rem;
     box-sizing: border-box;
   }
@@ -19,6 +19,4 @@
   }
 </style>
 
-<footer>
-  <span> Made with ❤ by Lifeni</span>
-</footer>
+<footer><span> Made with ❤ by Lifeni</span></footer>

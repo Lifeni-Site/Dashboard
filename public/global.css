@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 426px) {
   body {
-    grid-template-rows: minmax(240px, calc(34vh - 48px)) auto 48px;
+    grid-template-rows: minmax(240px, calc(34vh - 48px)) auto 72px;
   }
 }
 
