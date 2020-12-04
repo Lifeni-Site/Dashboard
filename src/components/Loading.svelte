@@ -1,6 +1,6 @@
 <style>
   div {
-    width: 360px;
+    width: 100%;
     padding: 48px;
     display: flex;
     flex-direction: column;
@@ -116,8 +116,8 @@
 <div>
   <svg
     class="spinner"
-    width="36px"
-    height="36px"
+    width="32px"
+    height="32px"
     viewBox="0 0 66 66"
     xmlns="http://www.w3.org/2000/svg">
     <circle
