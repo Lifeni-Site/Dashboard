@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, setContext } from 'svelte'
+  import { setContext } from 'svelte'
   import dayjs from 'dayjs'
 
   import Card from './Card.svelte'

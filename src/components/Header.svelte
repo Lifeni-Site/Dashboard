@@ -1,7 +1,3 @@
-<script lang="ts">
-  let update = 'Time'
-</script>
-
 <style>
   header {
     width: 100%;
