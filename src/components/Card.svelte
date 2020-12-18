@@ -1,9 +1,10 @@
 <script type="ts">
-  import { getContext, setContext } from 'svelte'
+  import { setContext } from 'svelte'
   import { card } from '../context'
   import ActionBar from './ActionBar.svelte'
   import MetaBar from './MetaBar.svelte'
   import StatusBar from './StatusBar.svelte'
+  import Tag from './Tag.svelte'
 
   setContext(card, {
     getRepo: () => repo,
@@ -42,6 +43,8 @@
 
   .card-title {
     margin: 0;
+    display: flex;
+    align-items: center;
     font-size: 1.25rem;
     line-height: 2.5rem;
     color: var(--font-primary);
@@ -59,7 +62,12 @@
   <MetaBar />
   <div class="card-content">
     <StatusBar />
-    <h3 class="card-title">{repo.name}</h3>
+    <h3 class="card-title">
+      {repo.name}
+      {#if repo.archived}
+        <Tag type="archived" />
+      {/if}
+    </h3>
     <p class="card-description">{repo.description}</p>
   </div>
   <ActionBar />
