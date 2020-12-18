@@ -1,16 +1,20 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
+  import { onMount, setContext } from 'svelte'
   import dayjs from 'dayjs'
 
   import Card from './Card.svelte'
   import Loading from './Loading.svelte'
+  import { global } from '../context'
+
+  setContext(global, {
+    getColor: (lang: string) => colors[lang]?.color,
+  })
 
   let repos = []
-  let final = []
   let whitelist = []
   let colors = []
 
-  onMount(async () => {
+  const fetchData = async () => {
     const fetchWhitelist = await fetch(`/assets/whitelist.json`)
     whitelist = await fetchWhitelist.json()
 
@@ -19,10 +23,11 @@
 
     const fetchRepos = await fetch(`https://api.github.com/users/Lifeni/repos`)
     repos = await fetchRepos.json()
-    final = repos
+
+    return repos
       .filter(repo => whitelist.includes(repo.name))
       .sort((a, b) => dayjs(b.pushed_at).unix() - dayjs(a.pushed_at).unix())
-  })
+  }
 </script>
 
 <style>
@@ -52,9 +57,11 @@
 </style>
 
 <main>
-  {#each final as repo (dayjs(repo.id).unix())}
-    <Card {repo} color={colors[repo.language].color} />
-  {:else}
+  {#await fetchData()}
     <Loading />
-  {/each}
+  {:then data}
+    {#each data as repo (dayjs(repo.id).unix())}
+      <Card {repo} />
+    {/each}
+  {/await}
 </main>
