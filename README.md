@@ -2,7 +2,7 @@
 
 用来展示一些自己的项目。
 
-大概在 [https://dev.lifeni.life](https://dev.lifeni.life)，部署在 Vercel 上。
+大概在 [https://dev.lifeni.life](https://dev.lifeni.life)，部署在 GitHub Pages 上。
 
 ## 技术
 
