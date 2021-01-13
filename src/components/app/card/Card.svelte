@@ -1,9 +1,9 @@
 <script type="ts">
   import { setContext } from 'svelte'
-  import { card } from '../context'
+  import { card } from '../../../context'
   import ActionBar from './ActionBar.svelte'
   import MetaBar from './MetaBar.svelte'
-  import StatusBar from './StatusBar.svelte'
+  import StatusBar from '../common/StatusBar.svelte'
   import Tag from './Tag.svelte'
 
   setContext(card, {
@@ -61,7 +61,7 @@
 <div class="card">
   <MetaBar />
   <div class="card-content">
-    <StatusBar />
+    <StatusBar type="card" />
     <h3 class="card-title">
       {repo.name}
       {#if repo.archived}

@@ -1,23 +1,31 @@
 <script lang="ts">
   import { getContext } from 'svelte'
-  import { card } from '../context'
-  import Icons from './Icons.svelte'
+  import { card, showcase } from '../../../context'
+  import Icons from '../../other/Icons.svelte'
 
-  const { getRepo } = getContext(card)
-  const repo = getRepo()
+  export let type: string
+  let repo: IRepo, app: IApp
+
+  if (type === 'card') {
+    const { getRepo } = getContext(card)
+    repo = getRepo()
+  } else if (type === 'showcase') {
+    const { getApp } = getContext(showcase)
+    app = getApp()
+  }
 </script>
 
 <style>
   .card-status-bar {
     display: flex;
     align-items: center;
+    gap: 12px;
   }
 
   .license,
   .star-count,
   .fork-count,
   .issues-count {
-    margin: 0 0.7rem 0 0;
     display: flex;
     align-items: center;
     font-size: 0.875rem;
@@ -27,28 +35,28 @@
 </style>
 
 <div class="card-status-bar">
-  {#if repo.license?.spdx_id}
+  {#if (repo || app).license?.spdx_id}
     <span class="license">
       <Icons name="license" />
-      {repo.license.spdx_id}
+      {(repo || app).license.spdx_id}
     </span>
   {/if}
-  {#if repo.stargazers_count !== 0}
+  {#if (repo || app).stargazers_count !== 0}
     <span class="star-count">
       <Icons name="star" />
-      {repo.stargazers_count}
+      {(repo || app).stargazers_count}
     </span>
   {/if}
-  {#if repo.forks_count !== 0}
+  {#if (repo || app).forks_count !== 0}
     <span class="fork-count">
       <Icons name="fork" />
-      {repo.forks_count}
+      {(repo || app).forks_count}
     </span>
   {/if}
-  {#if repo.open_issues_count !== 0}
+  {#if (repo || app).open_issues_count !== 0}
     <span class="issues-count">
       <Icons name="issues" />
-      {repo.open_issues_count}
+      {(repo || app).open_issues_count}
     </span>
   {/if}
 </div>

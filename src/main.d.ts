@@ -1,3 +1,14 @@
+interface IProjects {
+  card: Array<string>
+  showcase: Array<IApp>
+}
+
+interface IApp extends IRepo {
+  title: string
+  logo: string
+  images: Array<string>
+}
+
 interface ILicense {
   name: string
   url: string
@@ -17,5 +28,6 @@ interface IRepo {
   archived: boolean
   license: ILicense
   pushed_at: string
+  releases_url: string
   [propName: string]: any
 }

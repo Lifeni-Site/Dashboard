@@ -8,10 +8,12 @@
     color: var(--font-secondary);
     background-color: transparent;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.75rem;
+    font-weight: lighter;
     box-sizing: border-box;
   }
+
   @media (max-width: 426px) {
     footer {
       padding: 0 16px 16px 16px;

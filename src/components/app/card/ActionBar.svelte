@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getContext } from 'svelte'
-  import { card } from '../context'
+  import { card } from '../../../context'
 
   const { getRepo } = getContext(card)
   const repo = getRepo()

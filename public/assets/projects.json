@@ -1,0 +1,31 @@
+{
+  "card": [
+    "crawler-dashboard",
+    "crawler-test",
+    "here-just-record",
+    "network-test",
+    "see-you-next-id",
+    "see-you-next-id-api",
+    "sudoku-generator",
+    "sudoku-solver",
+    "where-are-we-from"
+  ],
+  "showcase": [
+    {
+      "name": "i-show-you",
+      "title": "I Show You",
+      "logo": "https://file.lifeni.life/dashboard/i-show-you/logo.svg",
+      "images": [
+        "https://file.lifeni.life/dashboard/i-show-you/0.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/1.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/2.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/3.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/4.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/5.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/6.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/7.webp",
+        "https://file.lifeni.life/dashboard/i-show-you/8.webp"
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv public --host",
     "validate": "svelte-check"
   },
   "devDependencies": {
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "dayjs": "^1.9.6",
+    "medium-zoom": "^1.0.6",
     "sirv-cli": "^1.0.0"
   }
 }

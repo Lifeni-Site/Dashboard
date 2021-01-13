@@ -1,3 +1,4 @@
 const global = {}
 const card = {}
-export { global, card }
+const showcase = {}
+export { global, card, showcase }

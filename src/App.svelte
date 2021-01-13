@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Footer from './components/Footer.svelte';
-  import Header from './components/Header.svelte';
-  import Main from './components/Main.svelte';
+  import Footer from './components/layout/Footer.svelte'
+  import Header from './components/layout/Header.svelte'
+  import Main from './components/layout/Main.svelte'
 </script>
 
 <Header />
