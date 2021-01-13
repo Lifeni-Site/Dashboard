@@ -7,7 +7,7 @@
     margin: 0.2rem 0.4rem;
     padding: 0.15rem 0.5rem;
     display: inline-block;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     line-height: 1rem;
     font-weight: bold;
     color: var(--font-secondary);

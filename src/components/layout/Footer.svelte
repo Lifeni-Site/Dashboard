@@ -1,7 +1,8 @@
 <style>
   footer {
     width: 100%;
-    padding: 0 24px 24px 24px;
+    height: 96px;
+    padding: 0 48px 24px 48px;
     display: flex;
     align-items: center;
     justify-content: center;

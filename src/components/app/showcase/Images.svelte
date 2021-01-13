@@ -11,7 +11,6 @@
   })
   setTimeout(() => {
     zoom.attach('.app-screenshot')
-    console.log(zoom.getImages())
   }, 0)
 </script>
 

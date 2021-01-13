@@ -47,6 +47,7 @@
     gap: 24px;
     place-content: start center;
     box-sizing: border-box;
+    animation: show 0.4s ease;
   }
 
   section {
@@ -54,6 +55,7 @@
     margin: 0 auto;
     padding: 24px 0;
     gap: 24px;
+    animation: show 0.4s ease;
   }
 
   h2 {
@@ -61,6 +63,7 @@
     text-align: center;
     color: var(--font-secondary);
     font-size: 1.125rem;
+    animation: show 0.4s ease;
   }
 
   @media (max-width: 1024px) {
@@ -86,6 +89,15 @@
     section {
       padding: 16px 0;
       gap: 16px;
+    }
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 </style>
