@@ -4,6 +4,7 @@
 
   import Language from '../common/Language.svelte'
   import StatusBar from '../common/StatusBar.svelte'
+  import LastUpdate from '../common/LastUpdate.svelte'
   import Icons from '../../other/Icons.svelte'
   import Images from './Images.svelte'
   import Releases from './Releases.svelte'
@@ -38,6 +39,7 @@
   .app-content-section {
     position: relative;
     width: 100%;
+    padding: 0 120px 0 0;
     display: flex;
     box-sizing: border-box;
   }
@@ -150,7 +152,10 @@
 <div class="showcase">
   <div class="app-content">
     <div class="app-content-section">
-      <img src={app.logo} alt="App Logo" class="app-logo" />
+      <img
+        src={app.logo || 'https://file.lifeni.life/dashboard/default.svg'}
+        alt="App Logo"
+        class="app-logo" />
       <section>
         <h3 class="app-title">{app.title}</h3>
         <p class="app-description">{app.description}</p>
@@ -181,9 +186,12 @@
       </span>
     </section>
     <section class="app-info-section">
-      <Releases />
+      {#if app.release}
+        <Releases />
+      {:else}
+        <LastUpdate type="showcase" />
+      {/if}
     </section>
   </div>
-
   <Images />
 </div>

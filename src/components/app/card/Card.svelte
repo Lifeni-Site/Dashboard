@@ -30,7 +30,7 @@
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 768px) {
     .card {
       width: 100%;
     }

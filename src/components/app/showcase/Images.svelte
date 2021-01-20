@@ -10,15 +10,15 @@
     background: 'rgba(0, 0, 0, .8)',
   })
   setTimeout(() => {
-    zoom.attach('.app-screenshot')
-  }, 0)
+    zoom.attach(`.app-screenshot.${app.name}`)
+  }, 100)
 </script>
 
 <style>
   .app-preview {
     position: relative;
     width: 100%;
-    max-width: 100vw;
+    max-width: calc(100vw - 32px);
     display: flex;
     overflow-x: auto;
   }
@@ -31,6 +31,10 @@
 
 <div class="app-preview" id="app-preview">
   {#each app.images as image}
-    <img src={image} alt="截图" data-zoomable class="app-screenshot" />
+    <img
+      src={image}
+      alt="截图"
+      data-zoomable
+      class={`app-screenshot ${app.name}`} />
   {/each}
 </div>

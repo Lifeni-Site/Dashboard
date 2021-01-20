@@ -21,4 +21,12 @@
   }
 </script>
 
+<style>
+  .last-update {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--font-secondary);
+  }
+</style>
+
 <span class="last-update"> {dayjs((repo || app).pushed_at).fromNow()} </span>

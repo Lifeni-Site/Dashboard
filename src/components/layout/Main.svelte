@@ -40,41 +40,46 @@
 
 <style>
   main {
+    position: relative;
     width: 100%;
+    max-width: calc(360px * 3 + 48px + 48px);
+    margin: 0 auto;
     padding: 24px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 360px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    place-content: start center;
-    box-sizing: border-box;
     animation: show 0.4s ease;
   }
 
   section {
-    width: calc(100% - 48px);
+    position: relative;
+    width: 100%;
+    max-width: calc(360px * 3 + 48px + 48px);
     margin: 0 auto;
-    padding: 24px 0;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     animation: show 0.4s ease;
   }
 
-  h2 {
-    width: 100%;
-    text-align: center;
-    color: var(--font-secondary);
-    font-size: 1.125rem;
-    animation: show 0.4s ease;
+  @media (max-width: 1176px) {
+    main,
+    section {
+      width: 100%;
+      max-width: calc(360px * 2 + 48px + 24px);
+    }
   }
 
   @media (max-width: 1024px) {
-    main {
-      grid-template-columns: repeat(auto-fit, 348px);
+    main,
+    section {
+      max-width: calc(360px * 2 + 48px);
     }
   }
 
   @media (max-width: 768px) {
     section {
-      width: 100%;
       margin: 0;
     }
   }
@@ -82,12 +87,11 @@
   @media (max-width: 426px) {
     main {
       padding: 16px;
-      grid-template-columns: repeat(auto-fit, calc(100vw - 32px));
       gap: 16px;
     }
 
     section {
-      padding: 16px 0;
+      padding: 16px 16px 0 16px;
       gap: 16px;
     }
   }
@@ -105,13 +109,13 @@
 {#await fetchData()}
   <Loading />
 {:then data}
-  <h2>应用 / APP</h2>
   <section>
     {#each data.apps as app}
-      <Showcase {app} />
+      {#if app.display}
+        <Showcase {app} />
+      {/if}
     {/each}
   </section>
-  <h2>开源项目 / Projects</h2>
   <main>
     {#each data.repos as repo (dayjs(repo.id).unix())}
       <Card {repo} />

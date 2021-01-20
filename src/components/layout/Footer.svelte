@@ -7,11 +7,12 @@
     align-items: center;
     justify-content: center;
     color: var(--font-secondary);
+    opacity: 0.5;
     background-color: transparent;
     text-align: center;
     font-size: 0.875rem;
     line-height: 1.75rem;
-    font-weight: lighter;
+    font-weight: bold;
     box-sizing: border-box;
   }
 

@@ -1,7 +1,8 @@
 <style>
   div {
     width: 100%;
-    padding: 48px;
+    min-height: calc(100vh - 336px);
+    padding: 0 48px 48px 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
