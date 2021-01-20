@@ -3,7 +3,6 @@
     "crawler-dashboard",
     "crawler-test",
     "here-just-record",
-    "network-test",
     "see-you-next-id",
     "see-you-next-id-api",
     "sudoku-generator",
@@ -25,7 +24,17 @@
         "https://file.lifeni.life/dashboard/i-show-you/6.webp",
         "https://file.lifeni.life/dashboard/i-show-you/7.webp",
         "https://file.lifeni.life/dashboard/i-show-you/8.webp"
-      ]
+      ],
+      "release": true,
+      "display": true
+    },
+    {
+      "name": "network-test",
+      "title": "Network Test",
+      "logo": "",
+      "images": [],
+      "release": false,
+      "display": false
     }
   ]
 }
