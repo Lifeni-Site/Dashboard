@@ -22,6 +22,7 @@
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    color: var(--font-secondary);
   }
 
   .language-point {
