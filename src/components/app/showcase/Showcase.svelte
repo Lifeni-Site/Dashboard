@@ -125,6 +125,10 @@
       flex-direction: column;
     }
 
+    .app-content-section {
+      padding: 0;
+    }
+
     .app-logo {
       width: 48px;
       height: 48px;
