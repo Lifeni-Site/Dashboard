@@ -3,6 +3,7 @@
     "crawler-dashboard",
     "crawler-test",
     "here-just-record",
+    "make-it-beautiful",
     "see-you-next-id",
     "see-you-next-id-api",
     "sudoku-generator",
@@ -10,6 +11,14 @@
     "where-are-we-from"
   ],
   "showcase": [
+    {
+      "name": "not-happy-today",
+      "title": "今天不高兴",
+      "logo": "",
+      "images": [],
+      "release": false,
+      "display": false
+    },
     {
       "name": "i-show-you",
       "title": "I Show You",
@@ -29,8 +38,8 @@
       "display": true
     },
     {
-      "name": "network-test",
-      "title": "Network Test",
+      "name": "web-test",
+      "title": "Web Test",
       "logo": "",
       "images": [],
       "release": false,
