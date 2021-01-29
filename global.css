@@ -2,6 +2,7 @@
   --background-0: #ffffff;
   --background-1: #f5f5f5;
   --background-2: #e0e0e0;
+  --background-3: #eeeeee;
   --font-primary: #000000;
   --font-secondary: #616161;
   --font-link: #304ffe;
@@ -13,6 +14,7 @@
     --background-0: #202020;
     --background-1: #181818;
     --background-2: #323232;
+    --background-3: #282828;
     --font-primary: #f5f5f5;
     --font-secondary: #bdbdbd;
     --font-link: #2196f3;
@@ -38,14 +40,21 @@ body {
   box-sizing: border-box;
 }
 
-a {
+a,
+button {
   color: var(--font-link);
+  border: none;
+  background-color: transparent;
   text-decoration: none;
-  transition: all 0.4s;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 a:hover,
 a:active,
-a:focus {
+a:focus,
+button:hover,
+button:active,
+button:focus {
   color: var(--font-link-hover);
 }
