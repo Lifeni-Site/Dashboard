@@ -10,11 +10,14 @@
   const zoom = mediumZoom({
     background: 'rgba(0, 0, 0, .8)',
   })
-  setTimeout(() => {
-    zoom.attach(`.app-screenshot.${app.name}`)
-  }, 100)
 
   let show = false
+  const showImage = () => {
+    show = true
+    setTimeout(() => {
+      zoom.attach(`.app-screenshot.${app.name}`)
+    }, 200)
+  }
 </script>
 
 <style>
@@ -60,7 +63,7 @@
 </style>
 
 {#if !show}
-  <button class="image-placeholder" on:click={() => (show = !show)}>
+  <button class="image-placeholder" on:click={showImage}>
     <Icons name="gallery" />
     <span class="show-gallery"> 查看 {app.images.length} 张截图 </span>
   </button>

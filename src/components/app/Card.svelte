@@ -43,7 +43,6 @@
     height: 72px;
     margin: 4px 24px 4px 4px;
     border-radius: 50%;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
   }
 
   .card-title {
