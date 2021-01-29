@@ -1,12 +1,11 @@
-interface IProjects {
-  card: Array<string>
-  showcase: Array<IApp>
-}
-
 interface IApp extends IRepo {
+  name: string
   title: string
+  description: string
   logo: string
   images: Array<string>
+  actions: Array<any>
+  display: boolean
 }
 
 interface ILicense {

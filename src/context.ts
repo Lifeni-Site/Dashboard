@@ -1,4 +1,4 @@
 const global = {}
 const card = {}
-const showcase = {}
-export { global, card, showcase }
+
+export { global, card }

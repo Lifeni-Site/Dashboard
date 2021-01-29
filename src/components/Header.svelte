@@ -22,14 +22,15 @@
   header p {
     margin: 0;
     padding: 0;
-    color: var(--font-secondary);
     font-size: 1rem;
     line-height: 2rem;
     text-align: center;
   }
 
   header a {
-    margin: 24px 0 0 0;
+    width: 32px;
+    height: 32px;
+    margin: 24px 12px 12px 12px;
   }
 
   header svg {
