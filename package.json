@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "1.0.0",
   "author": "Lifeni",
-  "description": "展示一些自己的项目",
+  "description": "这里有一些我做过的开源项目",
   "private": "true",
   "scripts": {
     "build": "rollup -c",
@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "dayjs": "^1.9.6",
-    "medium-zoom": "^1.0.6",
     "sirv-cli": "^1.0.0"
   }
 }

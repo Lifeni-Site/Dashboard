@@ -3,7 +3,6 @@ interface IApp extends IRepo {
   title: string
   description: string
   logo: string
-  images: Array<string>
   actions: Array<any>
   display: boolean
 }

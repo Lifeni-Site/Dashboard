@@ -1,48 +1,58 @@
 <script lang="ts">
-  import { setContext } from 'svelte'
   import dayjs from 'dayjs'
 
-  import Card from './app/Card.svelte'
+  import Showcase from './app/Showcase.svelte'
   import Loading from './global/Loading.svelte'
-  import { global } from '../context'
-
-  setContext(global, {
-    getColor: (lang: string) => colors[lang]?.color,
-  })
-
-  let colors = []
 
   const fetchData = async () => {
     const fetchApps = await fetch(`/assets/apps.json`)
     const apps = await fetchApps.json()
 
-    const fetchColors = await fetch(`/assets/colors.json`)
-    colors = await fetchColors.json()
-
     const fetchRepos = await fetch(`https://api.github.com/users/Lifeni/repos`)
     const repos = await fetchRepos.json()
 
     return apps
-      .map(app => {
-        return { ...repos.find(repo => repo.name === app.name), ...app }
+      .map((app: IApp) => {
+        return {
+          ...repos.find((repo: IRepo) => repo.name === app.name),
+          ...app,
+        }
       })
-      .sort((a, b) => dayjs(b.pushed_at).unix() - dayjs(a.pushed_at).unix())
+      .sort(
+        (a: { pushed_at: number }, b: { pushed_at: number }) =>
+          dayjs(b.pushed_at).unix() - dayjs(a.pushed_at).unix()
+      )
   }
 </script>
+
+{#await fetchData()}
+  <Loading />
+{:then data}
+  <main>
+    {#each data as app}
+      {#if app.display}
+        <Showcase {app} />
+      {/if}
+    {/each}
+  </main>
+{/await}
 
 <style>
   main {
     position: relative;
-    width: fit-content;
+    width: 100%;
+    max-width: 912px;
     min-height: calc(100vh - 340px);
     margin: 0 auto;
     padding: 24px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: center;
     justify-content: center;
     gap: 24px;
+    background-color: transparent;
     animation: show 0.4s ease;
     transition: all 0.2s;
   }
@@ -70,15 +80,3 @@
     }
   }
 </style>
-
-{#await fetchData()}
-  <Loading />
-{:then data}
-  <main>
-    {#each data as app}
-      {#if app.display}
-        <Card {app} />
-      {/if}
-    {/each}
-  </main>
-{/await}

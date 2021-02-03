@@ -1,6 +1,6 @@
 # Dashboard
 
-用来展示一些自己的项目。
+这里有一些我做过的开源项目。
 
 大概在 [https://dev.lifeni.life](https://dev.lifeni.life) ，部署在 GitHub Pages 上。
 
