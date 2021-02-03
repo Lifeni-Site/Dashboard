@@ -11,17 +11,6 @@
     "title": "I Show You",
     "description": "一个关于数据展示与分享的 Web 应用，可自行部署到自己的服务器。",
     "logo": "https://file.lifeni.life/dashboard/i-show-you/logo.svg",
-    "images": [
-      "https://file.lifeni.life/dashboard/i-show-you/0.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/1.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/2.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/3.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/4.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/5.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/6.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/7.webp",
-      "https://file.lifeni.life/dashboard/i-show-you/8.webp"
-    ],
     "actions": {
       "github": "https://github.com/Lifeni/i-show-you",
       "links": [
@@ -33,7 +22,7 @@
         {
           "name": "文档",
           "type": "documentation",
-          "url": "https://lifeni.github.com/i-show-you"
+          "url": "https://lifeni.github.io/i-show-you"
         }
       ]
     },
@@ -44,11 +33,6 @@
     "title": "Make It Beautiful",
     "description": "一个可以把文本页面变得好看和易于阅读的浏览器拓展。",
     "logo": "https://file.lifeni.life/dashboard/make-it-beautiful/logo.svg",
-    "images": [
-      "https://file.lifeni.life/dashboard/make-it-beautiful/0.webp",
-      "https://file.lifeni.life/dashboard/make-it-beautiful/1.webp",
-      "https://file.lifeni.life/dashboard/make-it-beautiful/2.webp"
-    ],
     "actions": {
       "github": "https://github.com/Lifeni/make-it-beautiful",
       "links": [
@@ -65,7 +49,6 @@
     "name": "web-test",
     "title": "Web Test",
     "logo": "",
-    "images": [],
     "display": false
   }
 ]
