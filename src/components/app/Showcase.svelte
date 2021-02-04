@@ -44,9 +44,9 @@
   }
 
   .app-logo {
-    width: 72px;
-    height: 72px;
-    margin: 0 0 24px 0;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 48px 0;
     border-radius: 50%;
   }
 
