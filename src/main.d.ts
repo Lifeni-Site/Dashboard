@@ -1,31 +1,15 @@
-interface IApp extends IRepo {
+interface IApp {
   name: string
   title: string
-  description: string
-  logo: string
-  actions: Array<any>
+  descriptions: Array<string>
+  github: string
+  links: Array<ILink>
+  topics: Array<string>
   display: boolean
 }
 
-interface ILicense {
+interface ILink {
   name: string
+  type: string
   url: string
-  spdx_id: string
-  [propName: string]: any
-}
-
-interface IRepo {
-  name: string
-  description: string
-  html_url: string
-  homepage: string
-  stargazers_count: number
-  forks_count: number
-  open_issues_count: number
-  language: string
-  archived: boolean
-  license: ILicense
-  pushed_at: string
-  releases_url: string
-  [propName: string]: any
 }
