@@ -3,12 +3,9 @@
     const openSidebar = <HTMLButtonElement>(
       document.querySelector('#expand-aside')
     )
-    console.log(openSidebar)
 
     if (openSidebar) {
       openSidebar.onclick = () => {
-        console.log(1)
-
         const aside = document.querySelector('aside')
         const header = document.querySelector('header')
         aside.classList.toggle('expand')

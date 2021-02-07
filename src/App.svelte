@@ -68,6 +68,8 @@
     left: 16px;
     height: 40px;
     padding: 8px 16px;
+    display: flex;
+    align-items: center;
     color: var(--font-link);
     background-color: var(--background-0);
     text-decoration: none;
