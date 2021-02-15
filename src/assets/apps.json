@@ -1,24 +1,20 @@
 [
   {
-    "name": "i-show-you",
-    "title": "I Show You",
+    "name": "status-page",
+    "title": "Status Page",
     "descriptions": [
-      "一个关于数据展示与分享的 Web 应用，类似 GitHub 的 Gist",
-      "已发布到 Docker Hub，可以通过 Docker Compose 部署到自己的服务器"
+      "一个简洁、可自定义的状态监控页，基于 UptimeRobot API",
+      "可以通过修改环境变量或配置文件写入自己的 API Key，部署到 Vercel"
     ],
-    "github": "https://github.com/Lifeni/i-show-you",
+    "github": "https://github.com/Lifeni/status-page",
     "links": [
       {
-        "name": "打开应用",
-        "type": "app",
-        "url": "https://i-show-you.dev.lifeni.life"
-      },
-      {
-        "name": "文档",
-        "type": "documentation",
-        "url": "https://lifeni.github.io/i-show-you"
+        "name": "查看 Demo 页",
+        "type": "see",
+        "url": "https://status-page.dev.lifeni.life"
       }
     ],
+
     "topics": ["Web App"],
     "display": true
   },
@@ -42,21 +38,25 @@
     "display": true
   },
   {
-    "name": "status-page",
-    "title": "Status Page",
+    "name": "i-show-you",
+    "title": "I Show You",
     "descriptions": [
-      "一个简洁、可自定义的状态监控页，基于 UptimeRobot API",
-      "可以通过修改环境变量或配置文件写入自己的 API Key，部署到 Vercel"
+      "一个关于数据展示与分享的 Web 应用，类似 GitHub 的 Gist",
+      "已发布到 Docker Hub，可以通过 Docker Compose 部署到自己的服务器"
     ],
-    "github": "https://github.com/Lifeni/status-page",
+    "github": "https://github.com/Lifeni/i-show-you",
     "links": [
       {
-        "name": "查看 Demo 页",
-        "type": "see",
-        "url": "https://status.lifeni.life"
+        "name": "打开应用",
+        "type": "app",
+        "url": "https://i-show-you.dev.lifeni.life"
+      },
+      {
+        "name": "文档",
+        "type": "documentation",
+        "url": "https://lifeni.github.io/i-show-you"
       }
     ],
-
     "topics": ["Web App"],
     "display": true
   }
