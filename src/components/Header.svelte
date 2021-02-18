@@ -1,5 +1,7 @@
 <script lang="ts">
-  document.addEventListener('DOMContentLoaded', () => {
+  import { onMount } from 'svelte'
+
+  onMount(() => {
     const openSidebar = <HTMLButtonElement>(
       document.querySelector('#expand-aside')
     )

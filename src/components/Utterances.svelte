@@ -1,11 +1,13 @@
 <script lang="ts">
-  document.addEventListener('DOMContentLoaded', () => {
+  import { onMount } from 'svelte'
+
+  onMount(() => {
     const comment = document.querySelector('#comment')
     if (comment) {
       const utterances = document.createElement('script')
       utterances.setAttribute('src', 'https://utteranc.es/client.js')
       utterances.setAttribute('repo', 'Lifeni-Site/Comment')
-      utterances.setAttribute('issue-term', 'dashboard/home')
+      utterances.setAttribute('issue-term', 'showcase/home')
       utterances.setAttribute('theme', 'preferred-color-scheme')
       utterances.setAttribute('crossOrigin', 'anonymous')
       utterances.setAttribute('async', 'true')

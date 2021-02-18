@@ -14,7 +14,24 @@
         "url": "https://status-page.dev.lifeni.life"
       }
     ],
-
+    "images": [
+      {
+        "alt": "桌面端亮色模式",
+        "url": "https://file.lifeni.life/dashboard/status-page/light-desktop.webp"
+      },
+      {
+        "alt": "移动端亮色模式",
+        "url": "https://file.lifeni.life/dashboard/status-page/light-mobile.webp"
+      },
+      {
+        "alt": "桌面端暗色模式",
+        "url": "https://file.lifeni.life/dashboard/status-page/dark-desktop.webp"
+      },
+      {
+        "alt": "移动端暗色模式",
+        "url": "https://file.lifeni.life/dashboard/status-page/dark-mobile.webp"
+      }
+    ],
     "topics": ["Web App"],
     "display": true
   },
@@ -33,7 +50,28 @@
         "url": "https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd"
       }
     ],
-
+    "images": [
+      {
+        "alt": "亮色模式",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/light.webp"
+      },
+      {
+        "alt": "暗色模式",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/dark.webp"
+      },
+      {
+        "alt": "复制全文",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/copy.webp"
+      },
+      {
+        "alt": "折叠代码",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/fold.webp"
+      },
+      {
+        "alt": "选项",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/options.webp"
+      }
+    ],
     "topics": ["Edge Extension"],
     "display": true
   },
@@ -57,6 +95,45 @@
         "url": "https://lifeni.github.io/i-show-you"
       }
     ],
+    "images": [
+      {
+        "alt": "主页",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/0.webp"
+      },
+      {
+        "alt": "代码编辑页",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/1.webp"
+      },
+      {
+        "alt": "分享面板",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/2.webp"
+      },
+      {
+        "alt": "文件选项",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/3.webp"
+      },
+      {
+        "alt": "文件历史",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/4.webp"
+      },
+      {
+        "alt": "移除文件",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/5.webp"
+      },
+      {
+        "alt": "文件预览",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/6.webp"
+      },
+      {
+        "alt": "管理员页面",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/7.webp"
+      },
+      {
+        "alt": "管理员页面",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/8.webp"
+      }
+    ],
+
     "topics": ["Web App"],
     "display": true
   }

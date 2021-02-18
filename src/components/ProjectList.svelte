@@ -1,4 +1,6 @@
 <script lang="ts" async>
+  import { onMount } from 'svelte'
+
   import dayjs from 'dayjs'
   import relativeTime from 'dayjs/plugin/relativeTime'
   import 'dayjs/locale/zh-cn'
@@ -6,17 +8,34 @@
   dayjs.extend(relativeTime)
   dayjs.locale('zh-cn')
 
+  import mediumZoom from 'medium-zoom'
+  import Swiper from 'swiper'
+  import 'swiper/swiper-bundle.min.css'
+
   import apps from '../assets/apps.json'
   import Icons from './Icons.svelte'
 
   let loading = true
   let repos = []
-  fetch(`https://api.github.com/users/Lifeni/repos`)
-    .then(res => res.json())
-    .then(data => {
-      repos = data
-      loading = false
+
+  onMount(() => {
+    fetch(`https://api.github.com/users/Lifeni/repos`)
+      .then(res => res.json())
+      .then(data => {
+        repos = data
+        loading = false
+      })
+
+    new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      freeMode: true,
     })
+
+    mediumZoom('.app-image', {
+      background: 'rgba(0, 0, 0, .8)',
+    })
+  })
 </script>
 
 <div class="project-list" id="main-content">
@@ -72,6 +91,21 @@
             </a>
           {/each}
         </p>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {#each app.images as image}
+              <div class="swiper-slide">
+                <img
+                  class="app-image"
+                  src={image.url}
+                  alt={image.alt}
+                  loading="lazy"
+                />
+              </div>
+            {/each}
+          </div>
+        </div>
       </div>
     {/if}
   {/each}
@@ -191,6 +225,25 @@
           border-top: solid 1px transparent;
           border-bottom: solid 1px var(--font-link-hover);
         }
+      }
+
+      .app-image {
+        width: auto;
+        max-height: 300px;
+        display: flex;
+        border: solid 2px var(--border-0);
+        border-radius: 4px;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 36px 0 12px 0;
+        border-radius: 4px;
+      }
+
+      .swiper-slide {
+        width: fit-content;
       }
     }
   }
