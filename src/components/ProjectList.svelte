@@ -173,6 +173,7 @@
 
       .info {
         width: 100%;
+        padding: 2px 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -233,6 +234,16 @@
         display: flex;
         border: solid 2px var(--border-0);
         border-radius: 4px;
+
+        @media (max-width: 480px) {
+          max-width: 100%;
+          max-height: calc((100vw - (36px * 2)) * 9 / 16);
+        }
+
+        @media (max-width: 420px) {
+          max-width: 100%;
+          max-height: calc((100vw - (32px * 2)) * 9 / 16);
+        }
       }
 
       .swiper-container {
@@ -240,6 +251,17 @@
         height: 100%;
         margin: 36px 0 12px 0;
         border-radius: 4px;
+
+        @media (max-width: 480px) {
+          width: auto;
+          margin: 12px -12px 12px 0;
+        }
+      }
+
+      .swiper-wrapper {
+        @media (max-width: 480px) {
+          margin: 0 -12px 0 0;
+        }
       }
 
       .swiper-slide {
