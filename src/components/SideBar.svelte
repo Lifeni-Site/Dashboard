@@ -23,7 +23,7 @@
     z-index: 1500;
     width: 30%;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 168px 72px 0 72px;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@
 
       &.expand {
         width: 100%;
-        height: calc(100vh - 128px);
+        height: calc(100% - 128px);
         padding: 48px 48px 0 48px;
         background-color: var(--background-4);
 
@@ -137,7 +137,7 @@
     color: var(--font-primary);
     background-color: transparent;
     flex: unset;
-    word-break: break-all;
+    word-break: normal;
     transition: all 0.2s;
 
     h3 {

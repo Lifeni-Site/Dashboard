@@ -128,11 +128,12 @@
       right: unset;
       bottom: unset;
       width: 72px;
-      min-height: 100vh;
-      padding: 0;
+      min-height: 100%;
+      padding: 48px 0;
       flex-direction: column;
       justify-content: space-between;
-      background-color: var(--background-1);
+      border-right: solid 2px var(--border-0);
+      background-color: var(--background-0);
       transition: all 0.2s;
 
       .text {
@@ -160,7 +161,7 @@
       button:active,
       button:focus,
       button:hover {
-        background-color: var(--background-1);
+        background-color: var(--background-1) !important;
       }
     }
 
@@ -187,7 +188,8 @@
         height: 72px;
         margin: 0;
         border-radius: 72px;
-        background-color: var(--background-4);
+        border: solid 2px var(--border-0);
+        background-color: var(--background-0);
       }
 
       a.auto-width {
@@ -204,7 +206,7 @@
       button:active,
       button:focus,
       button:hover {
-        background-color: var(--background-2);
+        background-color: var(--background-1) !important;
       }
     }
 

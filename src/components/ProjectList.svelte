@@ -205,6 +205,7 @@
 
       .app-links {
         width: 100%;
+        padding: 2px 0;
         display: flex;
         align-items: center;
 
@@ -254,7 +255,7 @@
 
         @media (max-width: 480px) {
           width: auto;
-          margin: 12px -12px 12px 0;
+          margin: 12px 0 12px 0;
         }
       }
 
