@@ -32,7 +32,7 @@
         "url": "https://file.lifeni.life/dashboard/status-page/dark-mobile.webp"
       }
     ],
-    "topics": ["Web App"],
+    "topics": ["Web 应用"],
     "display": true
   },
   {
@@ -72,7 +72,7 @@
         "url": "https://file.lifeni.life/dashboard/make-it-beautiful/options.webp"
       }
     ],
-    "topics": ["Edge Extension"],
+    "topics": ["浏览器扩展"],
     "display": true
   },
   {
@@ -134,7 +134,7 @@
       }
     ],
 
-    "topics": ["Web App"],
+    "topics": ["Web 应用"],
     "display": true
   }
 ]
