@@ -78,7 +78,6 @@
       width: 100%;
       height: 0;
       min-height: unset;
-      border-radius: 36px 36px 0 0;
       z-index: 3000;
       padding: 0 48px;
       background-color: var(--background-4);
@@ -90,9 +89,9 @@
 
       &.expand {
         width: 100%;
-        height: calc(100% - 128px);
+        height: calc(100% - 72px);
         padding: 48px 48px 0 48px;
-        background-color: var(--background-4);
+        background-color: var(--background-0);
 
         &::after {
           min-height: 48px;

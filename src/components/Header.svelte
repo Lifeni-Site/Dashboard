@@ -51,7 +51,7 @@
     >
       <path
         fill-rule="evenodd"
-        d="M12 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"
+        d="M4.801 3.57A1.75 1.75 0 016.414 2.5h11.174c.702 0 1.337.42 1.611 1.067l3.741 8.828c.04.092.06.192.06.293v7.562A1.75 1.75 0 0121.25 22H2.75A1.75 1.75 0 011 20.25v-7.5c0-.1.02-.199.059-.291L4.8 3.571zM6.414 4a.25.25 0 00-.23.153L2.88 12H8a.75.75 0 01.648.372L10.18 15h3.638l1.533-2.628a.75.75 0 01.64-.372l5.13-.051-3.304-7.797a.25.25 0 00-.23-.152H6.414zM21.5 13.445l-5.067.05-1.535 2.633a.75.75 0 01-.648.372h-4.5a.75.75 0 01-.648-.372L7.57 13.5H2.5v6.75c0 .138.112.25.25.25h18.5a.25.25 0 00.25-.25v-6.805z"
       />
     </svg>
   </button>
@@ -167,19 +167,21 @@
 
     @media (max-width: 480px) {
       width: 100%;
-      height: 128px;
+      height: 72px;
       min-height: unset;
-      padding: 28px 24px;
+      padding: 0 10px;
+      border-bottom: solid 2px transparent;
       flex-direction: row;
       justify-content: space-between;
-      background-color: transparent;
+      background-color: var(--background-4);
+      overflow: hidden;
 
       .text {
         display: inline-block;
       }
 
       &.expand {
-        background-color: transparent;
+        background-color: var(--background-4);
       }
 
       a,
@@ -187,9 +189,8 @@
         width: 72px;
         height: 72px;
         margin: 0;
-        border-radius: 72px;
-        border: solid 2px var(--border-0);
-        background-color: var(--background-0);
+        border-radius: 0;
+        background-color: var(--background-4);
       }
 
       a.auto-width {
@@ -206,7 +207,7 @@
       button:active,
       button:focus,
       button:hover {
-        background-color: var(--background-1) !important;
+        background-color: var(--background-4) !important;
       }
     }
 

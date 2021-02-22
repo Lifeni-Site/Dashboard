@@ -54,11 +54,11 @@
     }
 
     @media (max-width: 480px) {
-      padding: 120px 36px 48px 36px;
+      padding: 104px 36px 48px 36px;
     }
 
     @media (max-width: 420px) {
-      padding: 120px 32px 48px 32px;
+      padding: 104px 32px 48px 32px;
     }
   }
 
