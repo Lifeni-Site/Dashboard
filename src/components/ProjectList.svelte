@@ -181,6 +181,7 @@
 
       .tag {
         padding: 0 1rem 0 0;
+        font-weight: bold;
         color: var(--font-secondary);
       }
 
@@ -215,8 +216,6 @@
           align-items: center;
           line-height: initial;
           color: var(--font-link);
-          border-top: solid 1px transparent;
-          border-bottom: solid 1px transparent;
           transition: all 0.2s;
         }
 
@@ -224,8 +223,8 @@
         .app-link:active,
         .app-link:focus {
           color: var(--font-link-hover);
-          border-top: solid 1px transparent;
-          border-bottom: solid 1px var(--font-link-hover);
+          text-decoration: underline from-font;
+          text-underline-offset: 4px;
         }
       }
 
