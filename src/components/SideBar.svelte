@@ -132,6 +132,7 @@
   .about {
     position: relative;
     z-index: 200;
+    max-width: unset;
     padding: 0;
     color: var(--font-primary);
     background-color: transparent;
@@ -155,6 +156,7 @@
     }
 
     @media (min-width: 769px) {
+      max-width: 324px;
       flex: 1;
       color: var(--font-secondary);
       padding: 0;
