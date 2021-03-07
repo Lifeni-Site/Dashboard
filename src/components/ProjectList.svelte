@@ -90,6 +90,16 @@
               {link.name}
             </a>
           {/each}
+          <a
+            class="app-link"
+            href={app.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={'项目地址'}
+          >
+            <Icons name={'repo'} />
+            项目地址
+          </a>
         </p>
 
         <div class="swiper-container">

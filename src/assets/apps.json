@@ -16,6 +16,10 @@
     ],
     "images": [
       {
+        "alt": "Logo",
+        "url": "https://file.lifeni.life/dashboard/status-page/logo.webp"
+      },
+      {
         "alt": "桌面端亮色模式",
         "url": "https://file.lifeni.life/dashboard/status-page/light-desktop.webp"
       },
@@ -51,6 +55,10 @@
       }
     ],
     "images": [
+      {
+        "alt": "Logo",
+        "url": "https://file.lifeni.life/dashboard/make-it-beautiful/logo.webp"
+      },
       {
         "alt": "亮色模式",
         "url": "https://file.lifeni.life/dashboard/make-it-beautiful/light.webp"
@@ -96,6 +104,10 @@
       }
     ],
     "images": [
+      {
+        "alt": "Logo",
+        "url": "https://file.lifeni.life/dashboard/i-show-you/logo.webp"
+      },
       {
         "alt": "主页",
         "url": "https://file.lifeni.life/dashboard/i-show-you/0.webp"
